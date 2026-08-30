@@ -107,7 +107,7 @@ If you use this dataset in your research, please cite the corresponding paper (c
 ## Contact
 
 - **Corresponding Author:** Dr. Mahdi Jampour
-- **Email:** [mahdi.jampour@uni-hamburg.de](mailto:mahdi.jampour@uni-hamburg.de)
+- **Email:** [mahdi.jampour [@] {domain for uni-hamburg}.de]
 - **Affiliation:** University of Hamburg
 
 ## License
