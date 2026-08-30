@@ -1,0 +1,26 @@
+Copyright (c) 2026 Mahdi Jampour
+
+The MPHD (Multi-purpose Persian Handwriting Dataset) is made available under the 
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).
+
+You are free to:
+  - Share — copy and redistribute the material in any medium or format for non-commercial academic and research purposes.
+
+Under the following terms:
+  - Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made (though derivative works are not permitted for public redistribution). You must cite the original paper.
+  - NonCommercial — You may not use the material for commercial purposes.
+  - NoDerivatives — If you remix, transform, or build upon the material, you may not distribute the modified material without prior permission from the authors.
+
+Full Legal Code: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+--------------------------------------------------------------------------------
+Citation:
+If you use this dataset in your research, please cite:
+
+Mahdi Jampour, "MPHD: Multi-purpose Persian Handwriting Dataset for Text Recognition, Writer Identification, and Handwritten Analysis," Submitted for publication, 2026.
+
+
+Citation:
+If you use this dataset in your research, please cite the corresponding paper (currently under review):
+
+Mahdi Jampour et al., "MPHD: Multi-purpose Persian Handwriting Dataset for Text Recognition, Line Segmentation, Writer Identification, and Handwritten Analysis," 2026.
