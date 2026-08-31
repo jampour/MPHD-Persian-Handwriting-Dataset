@@ -95,6 +95,34 @@ Each writer directory contains a `.json` file housing ground-truth transcription
   }
 }
 ```
+A sample JSON annotation file can be downloaded [here](images/425-355001_2.json).
+
+## Tasks Supported by MPHD
+
+MPHD is designed to support multiple handwriting analysis tasks within a unified framework.
+
+### Handwriting Text Recognition (HTR)
+MPHD provides line-level annotated text for both fixed and variable content, enabling rigorous evaluation of HTR models under controlled and realistic conditions.
+
+![HTR sample](images/htr_sample.jpg)
+
+### Line Segmentation
+The dataset includes full text-region images together with corresponding line-level ground truth, making it suitable for developing and benchmarking line segmentation algorithms.
+
+![Line segmentation sample](images/line_segmentation_sample.jpg)
+
+### Writer Identification
+With samples from 500 writers and a dual-text design (fixed + variable), MPHD supports both closed-set and open-set text-independent writer identification.
+
+![Writer identification sample](images/writer_id_sample.jpg)
+
+### Character Recognition
+Each writer contributed 90 isolated characters (letters, digits, punctuation, and symbols), providing a clean resource for fine-grained character and digit recognition.
+
+![Isolated characters sample](images/isolated_chars_sample.jpg)
+
+### Other Tasks
+The dual-text structure and rich demographic metadata further enable document classification and demographic studies of handwriting style.
 
 ## Citation
 
