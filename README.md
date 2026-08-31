@@ -2,6 +2,8 @@
 
 **MPHD** is a comprehensive multi-purpose Persian handwriting dataset featuring samples from 500 native writers, designed for handwriting text recognition (HTR), line segmentation, writer identification, document classification, and demographic studies.
 
+![The MPHD data collection form.](images/Fig1_SampleForms.jpg)
+
 ## Dataset Organization & Directory Structure
 
 The dataset contains **500 root directories**, each corresponding to a single writer and named using the format `[ID]-[CODE]`.
@@ -58,6 +60,9 @@ Each writer's directory contains the following assets:
 - **Education:** Primary (20%), Secondary (20%), High School (20%), Bachelor (20.2%), Postgraduate (19.8%)
 - **Handedness:** Right-handed (91.0%) | Left-handed (9.0%)
 - **Glasses:** Uses glasses (27.4%) | No glasses (72.6%)
+
+![The MPHD data statistics.](images/Fig2_statistic.jpg)
+
 
 ## Dataset Access
 
