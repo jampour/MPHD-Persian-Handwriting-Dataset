@@ -95,7 +95,7 @@ Each writer directory contains a `.json` file housing ground-truth transcription
   }
 }
 ```
-A sample JSON annotation file can be downloaded [here](sample/425-355001_2.json).
+A sample JSON annotation file can be downloaded [here](samples/425-355001_2.json).
 
 ## Tasks Supported by MPHD
 
