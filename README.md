@@ -8,7 +8,7 @@
 
 The dataset contains **500 root directories**, each corresponding to a single writer and named using the format `[ID]-[CODE]`.
 
-### Folder Naming Schema: `[ID]-[CODE]` (e.g., `050-173011_3`)
+### Folder Naming Schema: `[ID]-[CODE]` (e.g., `050-173010_3`)
 
 - **ID:** Unique 3-digit writer identifier (e.g., `050`)
 - **CODE:** 7-character string encoding writer demographic attributes:
@@ -95,7 +95,7 @@ Each writer directory contains a `.json` file housing ground-truth transcription
   }
 }
 ```
-A sample JSON annotation file can be downloaded [here](images/425-355001_2.json).
+A sample JSON annotation file can be downloaded [here](sample/425-355001_2.json).
 
 ## Tasks Supported by MPHD
 
