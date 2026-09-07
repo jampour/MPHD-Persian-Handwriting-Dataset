@@ -1,17 +1,15 @@
 # MPHD: Multi-purpose Persian Handwriting Dataset
-
-**MPHD** is a comprehensive multi-purpose Persian handwriting dataset featuring samples from 500 native writers, designed for handwriting text recognition (HTR), line segmentation, writer identification, document classification, and demographic studies.
+**MPHD** is a comprehensive multi-purpose multi-granularity Persian handwriting dataset featuring samples from 500 native writers, designed for handwriting text recognition (HTR), line segmentation, writer identification, character/digit recognition, and demographic studies.
 
 ![The MPHD data collection form.](images/Fig1_SampleForms.jpg)
 
-## Dataset Organization & Directory Structure
 
-The dataset contains **500 root directories**, each corresponding to a single writer and named using the format `[ID]-[CODE]`.
+## Dataset Organization & Directory Structure
+The dataset contains **500 directories**, each corresponding to a single writer and named using the format `[ID]-[CODE]`.
 
 ### Folder Naming Schema: `[ID]-[CODE]` (e.g., `050-173010_3`)
-
 - **ID:** Unique 3-digit writer identifier (e.g., `050`)
-- **CODE:** 7-character string encoding writer demographic attributes:
+- **CODE:** 8-character string encoding writer demographic attributes:
   - **Digits 1–2:** Age (e.g., `17`)
   - **Digit 3:** Education (`1`: Primary, `2`: Secondary, `3`: High School, `4`: Bachelor, `5`: Postgraduate)
   - **Digit 4:** Gender (`0`: Female, `1`: Male)
@@ -19,8 +17,8 @@ The dataset contains **500 root directories**, each corresponding to a single wr
   - **Digit 6:** Spectacles usage (`0`: No glasses, `1`: Uses glasses)
   - **Sub-code `[CAT]` (after `_`):** Text 2 thematic category (`1`: Sport, `2`: Health, `3`: Technology, `4`: Economy, `5`: History)
 
-## Directory Structure per Writer
 
+## Directory Structure per Writer
 Each writer's directory contains the following assets:
 
 ```text
@@ -46,15 +44,15 @@ Each writer's directory contains the following assets:
     └── [ID]_Char_90.png
 ```
 
-## Dataset Statistics
 
+
+## Dataset Statistics
 - **Writers:** 500
 - **Total Text Lines:** 5,021 (Text 1: 2,745 lines | Text 2: 2,276 lines)
-- **Total Words / Characters:** 75,935 words | 333,092 non-space characters
+- **Total Words / Characters:** 75,430 words | 333,545 non-space characters
 - **Total Isolated Characters:** 45,000 (90 images/writer: 62 letter forms, 10 digits, 10 punctuation marks, 8 arithmetic symbols)
 
 ### Demographic Distribution
-
 - **Gender:** Male 50.2% (251) | Female 49.8% (249)
 - **Age Range:** 11 – 36 years (Mean: 18.3, Median: 17)
 - **Education:** Primary (20%), Secondary (20%), High School (20%), Bachelor (20.2%), Postgraduate (19.8%)
@@ -64,13 +62,15 @@ Each writer's directory contains the following assets:
 ![The MPHD data statistics.](images/Fig2_statistic.jpg)
 
 
-## Dataset Access
 
-The full dataset is available via DOI:  
-**[DOI will be inserted here]**
+## Dataset Access
+A sample data file for one writer can be seen [here](samples/001-183001_3.zip).
+
+The full dataset is available via DOI:  **[DOI will be inserted here]**
+
+
 
 ## Annotation Format (`.json`)
-
 Each writer directory contains a `.json` file housing ground-truth transcriptions:
 
 ```json
@@ -97,35 +97,56 @@ Each writer directory contains a `.json` file housing ground-truth transcription
 ```
 A sample JSON annotation file can be downloaded [here](samples/425-355001_2.json).
 
-## Tasks Supported by MPHD
 
+
+## Metadata (`metadata.csv`)
+For bulk processing, filtering, and demographic analysis, a consolidated [`metadata.csv`](metadata.csv) file is provided in the root directory. It aggregates writer-level metadata and file paths across all 500 writers into a tabular format.
+
+### Key Fields Included
+* **Demographics:** `subject_id`, `age`, `education_name`, `gender_name`, `handedness_name`, `spectacle_name`, `text2_category_name`
+* **Asset Paths:** `path_full_form`, `path_text1_image`, `path_text2_image`, `path_json`, `path_chars_folder`
+* **Text Metrics:** Word, character, and line counts for Text 1 and Text 2
+
+
+
+## Tasks Supported by MPHD
 MPHD is designed to support multiple handwriting analysis tasks within a unified framework.
+
 
 ### Handwriting Text Recognition (HTR)
 MPHD provides line-level annotated text for both fixed and variable content, enabling rigorous evaluation of HTR models under controlled and realistic conditions.
+Cleaned code for dataset loading and baseline evaluation for this task will be released soon.
 
 ![HTR sample](images/htr_sample.jpg)
 
+
 ### Line Segmentation
 The dataset includes full text-region images together with corresponding line-level ground truth, making it suitable for developing and benchmarking line segmentation algorithms.
+Cleaned code for dataset loading and baseline evaluation for this task will be released soon.
 
 ![Line segmentation sample](images/line_segmentation_sample.jpg)
 
+
 ### Writer Identification
 With samples from 500 writers and a dual-text design (fixed + variable), MPHD supports both closed-set and open-set text-independent writer identification.
+Cleaned code for dataset loading and baseline evaluation for this task will be released soon.
 
 ![Writer identification sample](images/writer_id_sample.jpg)
 
+
 ### Character Recognition
 Each writer contributed 90 isolated characters (letters, digits, punctuation, and symbols), providing a clean resource for fine-grained character and digit recognition.
+Cleaned code for dataset loading and baseline evaluation for this task will be released soon.
 
 ![Isolated characters sample](images/isolated_chars_sample.jpg)
+
 
 ### Other Tasks
 The dual-text structure and rich demographic metadata further enable document classification and demographic studies of handwriting style.
 
-## Citation
 
+
+## Citation
 If you use this dataset in your research, please cite the corresponding paper (currently under review):
 
 ```bibtex
@@ -137,14 +158,16 @@ If you use this dataset in your research, please cite the corresponding paper (c
 }
 ```
 
-## Contact
 
+
+## Contact
 - **Corresponding Author:** Dr. Mahdi Jampour
 - **Email:** [mahdi.jampour [@] {domain for uni-hamburg}.de]
 - **Affiliation:** University of Hamburg
 
-## License
 
+
+## License
 This dataset is released under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** license for non-commercial academic and research purposes only.  
 See the [LICENSE](LICENSE) file for full terms.
 ```
