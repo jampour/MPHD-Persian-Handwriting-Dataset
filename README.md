@@ -66,7 +66,7 @@ Each writer's directory contains the following assets:
 ## Dataset Access
 A sample data file for one writer can be seen [here](samples/001-183001_3.zip).
 
-The full dataset is available via DOI:  **[DOI will be inserted here]**
+The full dataset is available via DOI:  **[https://doi.org/10.5281/zenodo.22659290](https://doi.org/10.5281/zenodo.22659290)**
 
 
 
