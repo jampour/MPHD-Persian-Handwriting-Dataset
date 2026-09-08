@@ -115,28 +115,28 @@ MPHD is designed to support multiple handwriting analysis tasks within a unified
 
 ### Handwriting Text Recognition (HTR)
 MPHD provides line-level annotated text for both fixed and variable content, enabling rigorous evaluation of HTR models under controlled and realistic conditions.
-Cleaned code for dataset loading and baseline evaluation for this task will be released soon.
+Official dataset preparation and train/val/test split generation script is available [here](benchmarks/htr/).
 
 ![HTR sample](images/htr_sample.jpg)
 
 
 ### Line Segmentation
 The dataset includes full text-region images together with corresponding line-level ground truth, making it suitable for developing and benchmarking line segmentation algorithms.
-Cleaned code for dataset loading and baseline evaluation for this task will be released soon.
+Official dataset preparation and train/val/test split generation script is available [here](benchmarks/line_segmentation/).
 
 ![Line segmentation sample](images/line_segmentation_sample.jpg)
 
 
 ### Writer Identification
 With samples from 500 writers and a dual-text design (fixed + variable), MPHD supports both closed-set and open-set text-independent writer identification.
-Cleaned code for dataset loading and baseline evaluation for this task will be released soon.
+Official dataset preparation and train/val/test split generation script is available [here](benchmarks/writer_identification/).
 
 ![Writer identification sample](images/writer_id_sample.jpg)
 
 
-### Character Recognition
+### Character/Digit Recognition
 Each writer contributed 90 isolated characters (letters, digits, punctuation, and symbols), providing a clean resource for fine-grained character and digit recognition.
-Cleaned code for dataset loading and baseline evaluation for this task will be released soon.
+Official dataset preparation and train/val/test split generation script is available [here](benchmarks/char_recognition/).
 
 ![Isolated characters sample](images/isolated_chars_sample.jpg)
 
