@@ -1,4 +1,6 @@
 # MPHD: Multi-purpose Persian Handwriting Dataset
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
 **MPHD** is a comprehensive multi-purpose multi-granularity Persian handwriting dataset featuring samples from 500 native writers, designed for handwriting text recognition (HTR), line segmentation, writer identification, character/digit recognition, and demographic studies.
 
 ![The MPHD data collection form.](images/Fig1_SampleForms.jpg)
@@ -66,7 +68,8 @@ Each writer's directory contains the following assets:
 ## Dataset Access
 A sample data file for one writer can be seen [here](samples/001-183001_3.zip).
 
-The full dataset is available via DOI:  **[https://doi.org/10.5281/zenodo.22659290](https://doi.org/10.5281/zenodo.22659290)**
+The full dataset is available via DOI: [10.17632/2fcw6cd9gd.1](https://doi.org/10.17632/2fcw6cd9gd.1)
+and a Backup version at: [10.5281/zenodo.22659290](https://doi.org/10.5281/zenodo.22659290)
 
 
 
@@ -157,17 +160,15 @@ If you use this dataset in your research, please cite the corresponding paper (c
   year={2026}
 }
 ```
-
-
+> **Preprint:** The preliminary version of the manuscript is available on my [personal webpage](https://jampour.ir/publications).
 
 ## Contact
 - **Corresponding Author:** Dr. Mahdi Jampour
-- **Email:** [mahdi.jampour [@] {domain for uni-hamburg}.de]
+- **Email:** [mahdi.jampour [@] uni-hamburg.de]
 - **Affiliation:** University of Hamburg
-
 
 
 ## License
 This dataset is released under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** license for non-commercial academic and research purposes only.  
 See the [LICENSE](LICENSE) file for full terms.
-```
+
