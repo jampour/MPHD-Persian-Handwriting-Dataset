@@ -5,7 +5,7 @@ The provided script reproduces the official writer-level train/validation/test s
 
 ---
 
-## 🛠 Script Overview ([`mphd_htr_prepare_splits.py`](mphd_htr_prepare_splits.py))
+## Script Overview ([`mphd_htr_prepare_splits.py`](mphd_htr_prepare_splits.py))
 
 The extraction and splitting process consists of two steps:
 
