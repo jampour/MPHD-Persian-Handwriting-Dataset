@@ -68,9 +68,8 @@ Each writer's directory contains the following assets:
 ## Dataset Access
 A sample data file for one writer can be seen [here](samples/001-183001_3.zip).
 
-The full dataset is available via DOI: [10.17632/2fcw6cd9gd.1](https://doi.org/10.17632/2fcw6cd9gd.1)
-and a Backup version at: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22659290.svg)](https://doi.org/10.5281/zenodo.22659290)
-
+The full dataset is available via DOI: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22659290.svg)](https://doi.org/10.5281/zenodo.22659290)
+and a Backup version at: [![DOI](https://img.shields.io/badge/DOI-10.17632%2F2fcw6cd9gd.1-556B2F)](https://doi.org/10.17632/2fcw6cd9gd.1)
 
 
 ## Annotation Format (`.json`)
