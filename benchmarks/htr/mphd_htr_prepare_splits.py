@@ -5,7 +5,7 @@ Prepares MPHD line-level data for HTR training and reproduces the official
 train/val/test split used in the MPHD paper (Section 4.1, Table 7).
 
 STEP 1: Walk every writer directory [ID]-[CODE]/, read the writer's JSON file,
-        copy every T1/T2 line image into a single flat folder (MPHD_Lines),
+        copy every T1/T2 line image into a single flat folder (Lines),
         write a matching .txt file with the transcription for every line image,
         and record whether each line belongs to T1 or T2 in lines_type.txt.
 
@@ -38,7 +38,7 @@ VAL_RATIO   = 0.15
 TEST_RATIO  = 0.15
 
 # ======================================================================
-ALL_LINES_DIR = os.path.join(OUTPUT_ROOT, "MPHD_Lines")
+ALL_LINES_DIR = os.path.join(OUTPUT_ROOT, "Lines")
 TYPE_FILE = os.path.join(OUTPUT_ROOT, "lines_type.txt")
 
 
@@ -180,7 +180,7 @@ def step2_split_dataset(type_records):
     def write_ln(path, names):
         with open(path, "w", encoding="utf-8") as f:
             for n in names:
-                f.write(n + "\n")
+                f.write(n + IMAGE_EXT + "\n")
 
     write_ln(os.path.join(OUTPUT_ROOT, "train.ln"), train_names)
     write_ln(os.path.join(OUTPUT_ROOT, "val.ln"), val_names)
