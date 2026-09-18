@@ -12,7 +12,7 @@ The extraction and splitting process consists of two steps:
 1. **Extraction (`step1_extract_lines`):**
    * Walks every writer directory (`[ID]-[CODE]/`) in the MPHD dataset.
    * Reads line-level ground-truth transcriptions from each writer's `.json` file.
-   * Copies all Text 1 (T1) and Text 2 (T2) line images into a flat output directory (`MPHD_Lines/`).
+   * Copies all Text 1 (T1) and Text 2 (T2) line images into a flat output directory (`Lines/`).
    * Writes a matching `.txt` transcription file for every line image.
    * Records line categories (`T1` vs. `T2`) in `lines_type.txt`.
 
@@ -42,12 +42,12 @@ The generated splits correspond to Table 7 in the MPHD paper:
 1. Open `mphd_htr_prepare_splits.py` and update the `CONFIG` variables if necessary:
    ```python
    DATASET_ROOT = r"../MPHD"     # Path to root MPHD directory containing writer folders
-   OUTPUT_ROOT  = r"./"          # Path where MPHD_Lines/ and split files will be saved
+   OUTPUT_ROOT  = r"./"          # Path where Lines/ and split files will be saved
    
 
 
 ## Output Files Generated
-* MPHD_Lines/: Directory containing all extracted line images (.png) and their ground-truth text (.txt).
+* Lines/: Directory containing all extracted line images (.png) and their ground-truth text (.txt).
 * train.ln, val.ln, test.ln: List of line IDs assigned to each split.
 * test-t1.ln, test-t2.ln: Disjoint test sets evaluated separately by text type.
 * [optional] lines_type.txt: Mapping of line IDs to their text type (T1 or T2).
