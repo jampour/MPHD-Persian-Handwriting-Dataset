@@ -46,18 +46,29 @@ The generated splits correspond to Table 7 in the MPHD paper:
    OUTPUT_ROOT = r"./"           # Path where Lines/ and split files will be saved
    ```
 
-2. If you encounter a `UnicodeDecodeError` on Windows, enable UTF-8 mode before running the script:
+2. Run the script:
 
-   ```powershell
-   $env:PYTHONUTF8=1
+   ```bash
    python mphd_htr_prepare_splits.py
    ```
 
-   On Linux/macOS:
+### UTF-8 Encoding
 
-   ```bash
-   PYTHONUTF8=1 python mphd_htr_prepare_splits.py
-   ```
+If you encounter a `UnicodeDecodeError` when using the generated dataset, enable Python UTF-8 mode before running the training code.
+
+**Windows (PowerShell):**
+
+```powershell
+$env:PYTHONUTF8=1
+python train.py ...
+```
+
+**Linux/macOS:**
+
+```bash
+PYTHONUTF8=1 python train.py ...
+```
+
 
 
 
