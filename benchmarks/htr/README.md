@@ -40,10 +40,25 @@ The generated splits correspond to Table 7 in the MPHD paper:
 ## How to Run
 
 1. Open `mphd_htr_prepare_splits.py` and update the `CONFIG` variables if necessary:
+
    ```python
    DATASET_ROOT = r"../MPHD"     # Path to root MPHD directory containing writer folders
-   OUTPUT_ROOT  = r"./"          # Path where Lines/ and split files will be saved
-   
+   OUTPUT_ROOT = r"./"           # Path where Lines/ and split files will be saved
+   ```
+
+2. If you encounter a `UnicodeDecodeError` on Windows, enable UTF-8 mode before running the script:
+
+   ```powershell
+   $env:PYTHONUTF8=1
+   python mphd_htr_prepare_splits.py
+   ```
+
+   On Linux/macOS:
+
+   ```bash
+   PYTHONUTF8=1 python mphd_htr_prepare_splits.py
+   ```
+
 
 
 ## Output Files Generated
