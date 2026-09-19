@@ -154,7 +154,7 @@ If you use this dataset in your research, please cite the corresponding paper (c
 ```bibtex
 @article{jampour2026mphd,
   title={MPHD: Multi-purpose Persian Handwriting Dataset for Text Recognition, Line Segmentation, Writer Identification, and Handwritten Analysis},
-  author={Mahdi Jampour and others},
+  author={Jampour, M., Farridnejad, S., KarimiSardar, A., Champour, K., Aghaee Meybodi, A., Hematzadeh, F., Paul, L.,},
   journal={Under review},
   year={2026}
 }
