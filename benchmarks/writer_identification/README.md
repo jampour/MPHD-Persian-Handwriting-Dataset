@@ -147,15 +147,5 @@ openset_5fold_results.json
 
 The JSON file contains per-fold evaluation results, fold assignments, calibration thresholds, and aggregated open-set metrics. It is updated after each completed fold.
 
----
 
-
-## 7. Benchmark Results
-
-Detailed benchmark results are provided separately in the accompanying result tables:
-
-* `table9_closed_set.png`
-* `table10_open_set.png`
-
-These figures contain the quantitative evaluation results for the closed-set and open-set protocols, respectively.
 
