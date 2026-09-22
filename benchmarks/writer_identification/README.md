@@ -88,7 +88,7 @@ FOLD_SEED = 42
 
 The following figure shows a representative training run of the closed-set writer identification baseline on **500 writers**.
 
-![Writer Identification Training Curves](fig8_training_curves.png)
+![Writer Identification Training Curves](fig_training_curves.JPG)
 
 The figure provides a visual reference for the training and validation behavior of the baseline.
 
