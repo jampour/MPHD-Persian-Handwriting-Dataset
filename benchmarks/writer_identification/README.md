@@ -7,7 +7,7 @@ Two complementary evaluation protocols are provided:
 - **Closed-Set Writer Identification** — identification among 500 known writers.
 - **5-Fold Open-Set Writer Identification** — identification of known writers while detecting samples from unknown writers.
 
-The baselines use patch-based visual representations extracted from handwriting documents and aggregate patch-level predictions at the document level.
+The benchmarks use patch-based handwriting representations. Patch-level predictions are aggregated at the document level using softmax probability averaging.
 
 ---
 
@@ -60,7 +60,15 @@ The benchmark identifies documents using the following filename patterns:
 
 The closed-set benchmark uses all **500 writers** as classification identities.
 
-T1 documents are used for training and validation, while T2 documents are held out for evaluation. T1 documents are divided into patches, and the resulting patch samples are used for training and validation.
+T1 documents are used for model development, while T2 documents are held out for final evaluation.
+
+Documents are divided into overlapping 128 × 128 patches with a stride of 64 pixels. Patches containing less than 5% ink are discarded.
+
+The writer identification model uses an ImageNet-pretrained ResNet-18 with a 500-class classification layer.
+
+At test time, patch-level softmax probability vectors from each T2 document are averaged to obtain the document-level writer prediction.
+
+The benchmark reports patch-level and document-level Top-K identification performance.
 
 ### 5-Fold Open-Set Writer Identification
 
